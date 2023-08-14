@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Expense Tracker App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker App</h1>
+      <div class="input-container">
+        <input type="text" id="expenseName" placeholder="Expense Name" />
+        <input type="number" id="expenseAmount" placeholder="Amount" />
+        <input type="date" id="expenseDate" />
+        <select id="expenseCategory">
+          <option value="Food">Food</option>
+          <option value="Transportation">Transportation</option>
+          <option value="Utilities">Utilities</option>
+          <!-- Add more categories here -->
+        </select>
+        <button id="addExpenseBtn">Add Expense</button>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchExpense"
+          placeholder="Search Expense By Name"
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div class="table-container">
+        <table id="expenseTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Category</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="totalAmount"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

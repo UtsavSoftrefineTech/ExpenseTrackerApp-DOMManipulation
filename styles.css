@@ -1,0 +1,147 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #007bff;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+.input-container input,
+.input-container select,
+.input-container button {
+  margin-right: auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.input-container button {
+  margin-right: 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container input,
+.search-container button {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.search-container input {
+  width: 90%;
+  margin-right: 2rem;
+}
+
+.table-container {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5rem;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#totalAmount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
+  .input-container input,
+  .input-container select,
+  .input-container button {
+    margin-right: 1rem;
+    width: 25%;
+  }
+
+  .input-container button {
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .input-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .input-container select,
+  .input-container button {
+    width: 100%;
+  }
+
+  .input-container input {
+    width: 96.5%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  html {
+    font-size: 43.75%;
+  }
+  table {
+    font-size: 1.2rem;
+  }
+  table td button {
+    font-size: 1.2rem;
+  }
+}
